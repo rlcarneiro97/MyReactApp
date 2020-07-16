@@ -103,10 +103,10 @@ export default class Product extends Component{
                         <input type="text" placeholder="Titulo" value={this.state.value} onChange={this.titleChange} />
                         <input type="text" placeholder="Descrição" value={this.state.value} onChange={this.descriptionChange} />
                         <input type="text" placeholder="Url" value={this.state.value} onChange={this.urlChange} />
-                        <input type="submit" value="Alterar Informações" />
+                        <input type="submit" value="Alterar Informações"><Link to={"/"}></Link></input>
                     </form>
                     <div className="apagar-dado">
-                        <Link onClick={this.delete}>Apagar Registro</Link>
+                        <Link onClick={this.delete} to={"/"}>Apagar Registro</Link>
                     </div>
                     <Link to={"/"}>Voltar</Link>
                 </article>
