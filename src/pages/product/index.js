@@ -106,7 +106,7 @@ export default class Product extends Component{
                         <input type="submit" value="Alterar Informações" />
                     </form>
                     <div className="apagar-dado">
-                        <Link onClick={this.delete} to={"/"}>Apagar Registro</Link>
+                        <Link onClick={this.delete}>Apagar Registro</Link>
                     </div>
                     <Link to={"/"}>Voltar</Link>
                 </article>
