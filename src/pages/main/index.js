@@ -52,11 +52,8 @@ export default class Main extends Component{
         
         if(title === "" || description === "" || url === ""){
             alert("Preencha todos os campos para fazer a adição!")
-        }else{
-            this.create(object)
-            // alert("Registro criado com sucesso!")
         }
-        // event.preventDefault();
+        this.create(object)
     }
 
     componentDidMount(){
