@@ -68,9 +68,9 @@ export default class Product extends Component{
 
         try {
             await Api.put(`/products/${id}`, object)
-            alert("Registro alterado com sucesso!")
+            console.log("Registro alterado com sucesso!")
         } catch (err) {
-            alert("Erro na requisição!")
+            console.log("Erro na requisição!")
         }
         await Api.get("/")
     }
@@ -82,7 +82,7 @@ export default class Product extends Component{
             await Api.delete(`/products/${id}`)
             
         } catch (err) {
-            alert("Erro na requisição!")
+            console.log("Erro na requisição!")
         }
         await Api.get("/")
     }

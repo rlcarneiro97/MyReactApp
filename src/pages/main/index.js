@@ -54,7 +54,7 @@ export default class Main extends Component{
             alert("Preencha todos os campos para fazer a adição!")
         }else{
             this.create(object)
-            alert("Registro criado com sucesso!")
+            // alert("Registro criado com sucesso!")
         }
         // event.preventDefault();
     }
