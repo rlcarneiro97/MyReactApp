@@ -72,7 +72,7 @@ export default class Product extends Component{
         } catch (err) {
             alert("Erro na requisição!")
         }
-        await Api.get("/products")
+        await Api.get("/")
     }
 
     delete = async() => {
@@ -84,7 +84,7 @@ export default class Product extends Component{
         } catch (err) {
             alert("Erro na requisição!")
         }
-        await Api.get("/products")
+        await Api.get("/")
     }
 
     render(){
@@ -103,7 +103,7 @@ export default class Product extends Component{
                         <input type="text" placeholder="Titulo" value={this.state.value} onChange={this.titleChange} />
                         <input type="text" placeholder="Descrição" value={this.state.value} onChange={this.descriptionChange} />
                         <input type="text" placeholder="Url" value={this.state.value} onChange={this.urlChange} />
-                        <input type="submit" value="Alterar Informações"><Link to={"/"}></Link></input>
+                        <input type="submit" value="Alterar Informações"/>
                     </form>
                     <div className="apagar-dado">
                         <Link onClick={this.delete} to={"/"}>Apagar Registro</Link>

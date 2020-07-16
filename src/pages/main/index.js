@@ -80,7 +80,7 @@ export default class Main extends Component{
             console.log("Dados não Inseridos!")
             // alert("Erro na requisição!")
         }
-        await api.get("/products")
+        await api.get("/")
     }
 
     prevPage = () => {
@@ -115,7 +115,6 @@ export default class Main extends Component{
                         <input type="text" placeholder="Url" value={this.state.value} onChange={this.urlChange} />
                         <input type="submit" value="Adicionar Nova Ferramenta" />
                     </form>
-                    {/* <Link type="submit">Adicionar Nova Ferramenta</Link> */}
                 </div>
                 {products.map(product => (
                     <article key={product._id}>
