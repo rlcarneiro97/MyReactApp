@@ -69,10 +69,10 @@ export default class Product extends Component{
         try {
             await Api.put(`/products/${id}`, object)
             alert("Registro alterado com sucesso!")
-            await Api.get("/products")
         } catch (err) {
             alert("Erro na requisição!")
         }
+        await Api.get("/products")
     }
 
     delete = async() => {
@@ -80,10 +80,11 @@ export default class Product extends Component{
 
         try {
             await Api.delete(`/products/${id}`)
-            await Api.get("/products")
+            
         } catch (err) {
             alert("Erro na requisição!")
         }
+        await Api.get("/products")
     }
 
     render(){
