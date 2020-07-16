@@ -75,6 +75,7 @@ export default class Main extends Component{
         try {
             await api.post("/products", object)
             console.log("Dados Inseridos!")
+            await Api.put("/products")
             // alert("Registro criado com sucesso!")
         } catch (error) {
             console.log("Dados não Inseridos!")
