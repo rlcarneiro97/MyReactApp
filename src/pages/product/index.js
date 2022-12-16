@@ -43,13 +43,13 @@ export default class Product extends Component{
     handleSubmit(event) {
         const object = {}
 
-        if(this.state.title != ""){
+        if(this.state.title !== ""){
             object.title = this.state.title
         }
-        if(this.state.description != ""){
+        if(this.state.description !== ""){
             object.description = this.state.description
         }
-        if(this.state.url != ""){
+        if(this.state.url !== ""){
             object.url = this.state.url
         }
 
@@ -94,7 +94,7 @@ export default class Product extends Component{
                 <article>
                     <h1>{product.title}</h1>
                     <p>{product.description}</p>
-                    <div className="url">
+                    <div className="url"> 
                         <a target="_blank" href={product.url}>
                             Ir para: {product.url}
                         </a>
